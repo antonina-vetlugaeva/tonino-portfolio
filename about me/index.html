@@ -4,56 +4,80 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet/styles.css">
+    <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <title>Тонино портфолио</title>
   </head>
   <body>
     <header>
-      <nav>
-        <li>Силен. Центр удаления памяти.</li>
-        <a href="#">Работы</a>
-        <a href="#">Обо мне</a>
-      </nav>
+      <div id="navigation" class="nav" role="navigation" onclick="">
+        <p>Силен. Центр удаления памяти.</p>
+        <nav>
+          <a href="../main page/index.html">Работы</a>
+          <a href="#">Обо мне</a>
+        </nav>
+      </div>
     </header>
-    <img class="myphoto" img src="images/myphoto.png" alt="myphoto">
-    <img class="arrow" img src="images/arrow.png" alt="arrow">
-    <section class="sayhi">
-      <h2>Добрий вечір! Або доброго ранку...</h2>
-      <p>Какое бы время суток не царствовало сейчас за окном, на каком языке бы вы не здоровались, я категорически приветствую вас в портфолио, посвященном моему учебному проекту.
-      Меня зовут Тоня, мне 20. Учусь в школе дизайна НИУ ВШЭ. Не совсем понимаю, что тут творится, но стараюсь кайфовать от происходящего.
-      В мой проект, посвященный центру удаления памяти, вложена душа, сердце и немножко личных чувств. Поэтому надеюсь, что вам зайдет.</p>
-      <button id="writeme">Написать мне</button>
+    <section class="about">
+      <div class="myphoto"></div>
+      <img class="arrow" img src="../images/arrow.png" alt="arrow">
     </section>
-    <section class="whatican">
-      <h2>Что я могу?</h2>
-      <img class="web" img src="images/web.png" alt="web">
-      <img class="graphic" img src="images/graphic.png" alt="graphic">
-      <img class="html" img src="images/html.png" alt="html">
-      <img class="smm" img src="images/smm.png" alt="smm">
-      <p>Веб-дизайн</p>
-      <p>Графический дизайн</p>
-      <p>HTML / CSS / JS</p>
-      <p>SMM</p>
-    </section>
-    <section class="other">
-      <p>А ЕЩЕ<br><br>
-        <a class="#">Пишу стихи</a><br> Люблю <a class="#">док кино</a><br>
-        Ращу двух тритонов<br>
-        Преподаю литературу
-      </p>
-      <p>ЦЕЛИ<br><br>
-        Закончить 1 курс и выжить<br>
-        Освоить таргетинг<br>
-        Съездить в Берлин<br>
-        Открыть бар
-      </p>
-      <p>СОЦСЕТИ<br><br>
-        <a class="#">почти 1000 друзей!!</a>
-        <a class="#">нужен для учебы</a>
-        <a class="#">книжка с картинками</a>
-        <a class="#">нытье о бывших</a>
-      </p>
-    <section>
+    <article>
+      <div class="container">
+        <section class="sayhi">
+          <h2>Добрий вечір! Або доброго ранку...</h2>
+          <p>Какое бы время суток не царствовало сейчас за окном, на каком языке бы вы не здоровались, я категорически приветствую вас в портфолио, посвященном моему учебному проекту.<br><br>
+          Меня зовут Тоня, мне 20. Учусь в школе дизайна НИУ ВШЭ. Не совсем понимаю, что тут творится, но стараюсь кайфовать от происходящего.
+          В мой проект, посвященный центру удаления памяти, вложена душа, сердце и немножко личных чувств. Поэтому надеюсь, что вам зайдет.</p>
+          <button id="writeme">Написать мне</button>
+        </section>
+        <section class="whatican">
+          <h2>Что я могу?</h2>
+          <div class="whatican-pictures">
+            <div class="cando">
+              <img class="picture" img src="../images/web.png" alt="web">
+              <p>Веб-дизайн</p>
+            </div>
+            <div class="cando">
+              <img class="picture" img src="../images/graphic.png" alt="graphic">
+              <p>Графический дизайн</p>
+            </div>
+            <div class="cando">
+              <img class="picture" img src="../images/html.png" alt="html">
+              <p>HTML / CSS / JS</p>
+            </div>
+            <div class="cando">
+              <img class="picture" img src="../images/smm.png" alt="smm">
+              <p>SMM</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="other">
+          <div class="other-info"><p>А ЕЩЕ</p><br>
+            <p><a class="#">Пишу стихи</a></p>
+            <p>Люблю <a class="#">док кино</a></p>
+            <p>Ращу двух тритонов</p>
+            <p>Преподаю литературу</p>
+          </p>
+          </div>
+          <div class="other-info"><p>ЦЕЛИ</p><br>
+            <p>Закончить 1 курс и выжить</p>
+            <p>Освоить таргетинг</p>
+            <p>Съездить в Берлин</p>
+            <p>Открыть бар</p>
+          </div>
+          <div class="other-info">
+            <p>СОЦСЕТИ</p><br>
+            <p>почти 1000 друзей!!</p>
+            <p>нужен для учебы</p>
+            <p>книжка с картинками</p>
+            <p>нытье о бывших</p>
+          </div>
+      <section>
+      </article>
     <footer>
     </footer>
+    <script src="../js/header.js" charset="utf-8"></script>
   </body>
 </html>

@@ -6,7 +6,8 @@
 }
 
 html {
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
+
   font-size: 1.11vw;
 }
 
@@ -22,8 +23,6 @@ header {
   z-index: 1111;
   top: 0;
   left: 0;
-
-  overflow: hidden;
 
   width: 100%;
 
@@ -196,4 +195,89 @@ footer {
   height: 12em;
 
   background-color: #656565;
+}
+
+@media screen and (max-width: 768px) {
+
+  header p {
+    margin-left: 4.4em;
+
+    font-size: 2.2rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .myphoto {
+    height: 79em;
+  }
+
+  h2 {
+    width: 10em;
+    padding-top: 1.6em;
+
+    font-size: 6rem;
+  }
+
+  .sayhi p {
+    padding-top: 2.4em;
+    padding-right: 6.8em;
+
+    font-size: 2.5rem;
+    line-height: 140%;
+  }
+
+  #writeme {
+    margin-top: 2.7em;
+
+    font-size: 2.5rem;
+  }
+
+  .whatican-pictures {
+    padding-top: 4.4em;
+  }
+
+  .picture {
+    width: 21em;
+    height: 21em;
+
+    opacity: 0.5;
+  }
+
+  .cando p {
+    margin-top: 0.9em;
+    margin-bottom: 2.3em;
+
+    font-size: 2rem;
+  }
+
+  .other {
+    display: inline-block;
+
+    width: 100%;
+    margin-top: 5.7em;
+    padding-top: 4.2em;
+    padding-bottom: 3.7em;
+    padding-left: 9.3em;
+
+    background-color: #F6F6F6;
+
+    justify-content: space-between;
+  }
+
+  .other-info {
+    width: 15em;
+    padding-bottom: 2.5em;
+
+    font-size: 2.5rem;
+    line-height: 144%;
+  }
+
+  footer {
+    height: 24em;
+  }
+
+
+
 }

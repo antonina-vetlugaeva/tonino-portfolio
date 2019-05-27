@@ -17,32 +17,34 @@ body:not(.about) {
   font-size: 1.16rem;
 }
 
-.burger {
-  display: none;
-}
+header nav {
+  display: flex;
+  float: right;
+  flex-direction: row;
 
-header nav, a {
-  margin-right: 9.3em;
-  padding: 0;
+  margin-right: 7.3em;
 
   list-style: none;
-}
 
-header nav {
-  float: right;
+  text-decoration: none;
 
   line-height: 6em;
 }
 
-header nav a {
-  float: left;
 
-  margin-right: 1.9em;
+clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
 
-  text-decoration: none;
+  height: 0;
+
+  content: "";
 }
 
 header a:first-child {
+  padding-right: 1.9em;
+
   color: #2A3094;
 }
 
@@ -114,6 +116,7 @@ header p {
 
 .about img {
   position: fixed;
+  z-index: 111111;
 
   width: 2.6em;
   padding-top: 7.9em;
@@ -208,35 +211,75 @@ footer {
 
   background-color: #5F5F5F;
 }
-/*.nav .navtoogle {
-    display: none;
-
-    width: 100%;
-  	height: 45px;
-  	  margin: 0;
-    padding: .5em .5em .8em;
-   	 padding: 0;
-
-    	list-style: none;
-
-    text-align: left;
-   	 text-align: center;
-  	text-transform: uppercase;
-
-    border: none;
-  	border-bottom: 1px rgba(0,0,0,0.1) solid;
-    background: none;
-  	background: rgba(255,255,255,0.9);
-
-  	font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-  	font-size: 14px;
-  	font-weight: 300;
-  	line-height: 1.7;
-  }*/
 
 
 @media screen and (max-width: 768px) {
+
+  header p {
+    margin-left: 4.4em;
+
+    font-size: 2.2rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .burger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: none;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+  }
+
+  .burger .icon {
+    position: absolute;
+    top: 3.7em;
+    right: 7em;
+
+    width: 24px;
+    height: 3px;
+
+    background-color: #212121;
+  }
+
+  .burger .icon:before {
+    position: absolute;
+    top: -8px;
+
+    width: 24px;
+    height: 3px;
+
+    content: "";
+
+    background-color: #212121;
+  }
+
+  .burger .icon:after {
+    position: absolute;
+    top: 8px;
+
+    width: 24px;
+    height: 3px;
+
+    content: "";
+
+    background-color: #212121;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+  }
 
   .about {
     height: 98em;
@@ -265,18 +308,6 @@ footer {
 
     width: 5.6em;
     padding-top: 17.9em;
-
-
-  }
-
-  header p {
-    margin-left: 4.4em;
-
-    font-size: 2.5rem;
-  }
-
-  header nav {
-    display: none;
   }
 
   article {
@@ -349,102 +380,13 @@ footer {
 
   footer {
     height: 24em;
-    margin-top: 112.4em;
-  }
-
-  /*.nav {
-  		position: relative;
-
-  		height: 100px;
-  	}
-  .nav nav {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-
-    text-align: center;
-  	text-transform: uppercase;
-
-  	border-bottom: 1px rgba(0,0,0,0.1) solid;
-  	background: rgba(255,255,255,0.9);
-
-  	font-family: 'Open Sans', sans-serif;
-  	font-size: 14px;
-  	font-weight: 300;
-  	line-height: 1.7;
-  	}
-
-  .nav a {
-  		display: none;
-
-  		margin: 0;
-
-  	}
-
-
-  .nav a.current{
-  	display:block;
-
-  	height: 45px;
-
-  		border-bottom: 1px rgba(0,0,0,0.1) solid;
+    margin-top: 156.5em;
   }
 
 
-  .nav a.current:before {
-  	content: '\2630';
-
-    	font-size: 20px;
-    	line-height: 2.1;
-
-  }
-
-  	.nav a {
-  		display: block;
-
-   	 width: 100%;
-
-    	list-style: none;
-
-      text-align:center;
-  	text-transform: uppercase;
-
-  	font-family: 'Open Sans', sans-serif;
-  	font-size: 14px;
-  	font-weight: 300;
-  	line-height: 1.7;
-  	}
-  	.nav .current a {
-  		color: #666;
-  		background: none;
-  	}
 
 
-  		:hover {
-  		background-image: none;
-  	}
-  	.nav nav:hover a {
-  		display: block;
 
-  		margin: 0 0 5px;
-  	}
-  	.nav nav:hover .current {
-  	}
-
-
-  	.nav.right nav {
-  		right: 0;
-  		left: auto;
-  	}
-
-
-  	.nav.center nav {
-  		left: 50%;
-
-  		margin-left: -90px;
-  	}*/
 
 
 

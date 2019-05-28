@@ -24,49 +24,48 @@ header {
   top: 0;
   left: 0;
 
+  overflow: hidden;
+
   width: 100%;
 
   transition: all .2s ease;
   text-align: center;
 
-
-}
-
-header nav, a {
-  margin-right: 9.3em;
-  padding: 0;
-
-  list-style: none;
-}
-
-header nav {
-  float: right;
-
   line-height: 6em;
 }
 
-header nav a {
-  float: left;
+header li {
+  display: inline-block;
 
-  margin-right: 1.9em;
+  padding-right: 1.9em;
 
   text-decoration: none;
 }
 
-header a:first-child {
+header ul {
+  float: right;
+
+  margin-right: 5.5em;
+
+  list-style: none;
+
+  text-decoration: none;
+}
+
+header a {
+  padding-right: 1.9em;
+
+  text-decoration: none;
+
   color: #000;
 }
 
-header a:first-child:hover {
-  transition: 0.1s;
-
+#active {
   color: #2A3094;
 }
 
-header a:last-of-type {
-  margin-right: 0;
-
-  text-decoration: none;
+header a:last-of-type:hover {
+  transition: 0.1s;
 
   color: #2A3094;
 }
@@ -80,25 +79,36 @@ header p {
   line-height: 6em;
 }
 
+.menu-trigger {
+  display: none;
+
+  text-align: center;
+}
+
 .myphoto {
   position: relative;
   z-index: 1;
 
   width: 100%;
-  height: 47.3em;
+  height: 39em;
 
   background-image: url(../../images/myphoto.jpg);
   background-position: 50% 30%;
-  background-size: cover;
+  background-size: cover;;
 }
 
-.about img {
-  position: fixed;
-  z-index: 11;
+.arrow {
+  position: absolute;
+  z-index: 111111;
+  top: 34.3em;
+  right: 48.45%;
 
   width: 2.6em;
-  padding-top: 10em;
-  padding-left: 10em;
+
+  cursor: pointer;
+  text-align: center;
+
+  filter: brightness(300%);
 }
 
 article:not(.other) {
@@ -205,8 +215,44 @@ footer {
     font-size: 2.2rem;
   }
 
-  header nav {
+  header ul {
+    display: flex;
+    float: right;
+    flex-direction: column;
+
+    margin-left: 20em;
+    padding-top: 0;
+    padding-right: 0.8em;
+
+  }
+
+  header li {
+    display: block;
+
+    padding: 0;
+
+    text-align: center;
+
+    border-bottom: 0.01em solid #656565;
+
+    font-size: 2.2rem;
+  }
+
+
+  header a:not(.menu-trigger) {
+    padding: 0;
+  }
+
+  header ul {
     display: none;
+  }
+
+  .menu-trigger {
+    display: block;
+    float: right;
+
+    margin-top: 3em;
+    margin-right: 4.4em;
   }
 
   .myphoto {
@@ -215,7 +261,7 @@ footer {
 
   h2 {
     width: 10em;
-    padding-top: 1.6em;
+    padding-top: 2.3em;
 
     font-size: 6rem;
   }

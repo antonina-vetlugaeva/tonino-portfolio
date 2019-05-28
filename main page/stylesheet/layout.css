@@ -17,51 +17,6 @@ body:not(.about) {
   font-size: 1.16rem;
 }
 
-header nav {
-  display: flex;
-  float: right;
-  flex-direction: row;
-
-  margin-right: 7.3em;
-
-  list-style: none;
-
-  text-decoration: none;
-
-  line-height: 6em;
-}
-
-
-clearfix:after {
-  display: block;
-  visibility: hidden;
-  clear: both;
-
-  height: 0;
-
-  content: "";
-}
-
-header a:first-child {
-  padding-right: 1.9em;
-
-  color: #2A3094;
-}
-
-header a:last-of-type {
-  margin-right: 0;
-
-  text-decoration: none;
-
-  color: #000;
-}
-
-header a:last-of-type:hover {
-  transition: 0.1s;
-
-  color: #2A3094;
-}
-
 header {
   position: fixed;
   z-index: 1111;
@@ -76,6 +31,44 @@ header {
   text-align: center;
 
   background: #F6F6F6;
+
+  line-height: 6em;
+}
+
+header li {
+  display: inline-block;
+
+  padding-right: 1.9em;
+
+  text-decoration: none;
+}
+
+header ul {
+  float: right;
+
+  margin-right: 5.5em;
+
+  list-style: none;
+
+  text-decoration: none;
+}
+
+header a {
+  padding-right: 1.9em;
+
+  text-decoration: none;
+
+  color: #000;
+}
+
+#active {
+  color: #2A3094;
+}
+
+header a:last-of-type:hover {
+  transition: 0.1s;
+
+  color: #2A3094;
 }
 
 header p {
@@ -85,6 +78,12 @@ header p {
 
   font-size: 1.16rem;
   line-height: 6em;
+}
+
+.menu-trigger {
+  display: none;
+
+  text-align: center;
 }
 
 .about {
@@ -114,13 +113,14 @@ header p {
   color: #2A3094;
 }
 
-.about img {
-  position: fixed;
+.arrow {
   z-index: 111111;
 
   width: 2.6em;
   padding-top: 7.9em;
   padding-bottom: 3.4em;
+
+  cursor: pointer;
 }
 
 .square:first-of-type {
@@ -207,7 +207,7 @@ article {
 
 footer {
   height: 12em;
-  margin-top: 17.4em;
+  margin-top: 59.6em;
 
   background-color: #5F5F5F;
 }
@@ -221,64 +221,44 @@ footer {
     font-size: 2.2rem;
   }
 
-  header nav {
-    display: none;
-  }
-
-  .burger {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
-    display: none;
-
-    width: 24px;
-    height: 24px;
-
-    cursor: pointer;
-  }
-
-  .burger .icon {
-    position: absolute;
-    top: 3.7em;
-    right: 7em;
-
-    width: 24px;
-    height: 3px;
-
-    background-color: #212121;
-  }
-
-  .burger .icon:before {
-    position: absolute;
-    top: -8px;
-
-    width: 24px;
-    height: 3px;
-
-    content: "";
-
-    background-color: #212121;
-  }
-
-  .burger .icon:after {
-    position: absolute;
-    top: 8px;
-
-    width: 24px;
-    height: 3px;
-
-    content: "";
-
-    background-color: #212121;
-  }
-
-  ul {
+  header ul {
     display: flex;
-    flex-direction: row;
+    float: right;
+    flex-direction: column;
 
-    margin: 0;
+    margin-left: 20em;
+    padding-top: 0;
+    padding-right: 0.8em;
+
+  }
+
+  header li {
+    display: block;
+
     padding: 0;
+
+    text-align: center;
+
+    border-bottom: 0.01em solid #656565;
+
+    font-size: 2.2rem;
+  }
+
+
+  header a:not(.menu-trigger) {
+    padding: 0;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .menu-trigger {
+    display: block;
+    float: right;
+
+    margin-top: 3em;
+    margin-right: 4.4em;
   }
 
   .about {
@@ -304,10 +284,10 @@ footer {
   }
 
   .about img {
-    position: fixed;
-
     width: 5.6em;
     padding-top: 17.9em;
+
+    cursor: pointer;
   }
 
   article {
@@ -382,12 +362,5 @@ footer {
     height: 24em;
     margin-top: 156.5em;
   }
-
-
-
-
-
-
-
 
 }

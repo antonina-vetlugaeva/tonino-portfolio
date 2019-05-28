@@ -1,13 +1,10 @@
-$(".burger").click(function() {
-  $(".nav").slideToggle(400);
+$(document).ready(function() {
+  $('.menu-trigger').click(function () {
+    $('header ul').slideToggle(500);
+  });
 });
-
 $(window).resize(function() {
-  if ($(window).width() > 900) {
-    $(".nav").show();
-    $(".burger").hide();
-  } else {
-    $(".nav").hide();
-    $(".burger").show();
+  if ($(window).width() > 500) {
+    $('header ul').removeAttr('style');
   }
-});
+})

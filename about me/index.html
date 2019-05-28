@@ -9,17 +9,16 @@
   </head>
   <body>
     <header>
-      <div id="navigation" class="nav" role="navigation" onclick="">
-        <p>Силен. Центр удаления памяти.</p>
-        <nav>
-          <a href="../main page/index.html">Работы</a>
-          <a href="#">Обо мне</a>
-        </nav>
-      </div>
+      <a href="#" class="menu-trigger"><img src="../images/burger.svg"></a>
+      <p>Силен. Центр удаления памяти</p>
+      <ul>
+        <li><a href="../main page/index.html" id="active">Работы</a></li>
+        <li><a href="../about me/index.html">Обо мне</a></li>
+      </ul>
     </header>
     <section class="about">
       <div class="myphoto"></div>
-      <img class="arrow" img src="../images/arrow.png" alt="arrow">
+      <a href="#"><img class="arrow" img src="../images/arrow.png" alt="arrow"></a>
     </section>
     <article>
       <div class="container">
@@ -79,5 +78,7 @@
     <footer>
     </footer>
     <script src="../js/header.js" charset="utf-8"></script>
+    <script src="../js/burger.js" charset="utf-8"></script>
+    <script src="../js/scroll.js" charset="utf-8"></script>
   </body>
 </html>

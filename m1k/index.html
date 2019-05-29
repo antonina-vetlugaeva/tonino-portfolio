@@ -4,24 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet/styles.css">
+    <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <title>Тонино портфолио</title>
   </head>
   <body>
     <header>
-      <nav>
-        <li>Силен. Центр удаления памяти.</li>
-        <a href="#">Работы</a>
-        <a href="#">Обо мне</a>
-      </nav>
+      <a href="#" class="menu-trigger"><img src="../images/burger.svg"></a>
+      <p>Силен. Центр удаления памяти</p>
+      <ul>
+        <li><a href="../main page/index.html" id="active">Работы</a></li>
+        <li><a href="../about me/index.html" >Обо мне</a></li>
+      </ul>
     </header>
     <section class="about">
       <h1>Идея и брендинг Первые наработки</h1>
       <p>Перед сном прокручиваете в голове события, которым лучше было бы  не случаться? Просто забудьте.</p>
+      <a href="#">Перейти на сайт портфолио</a>
+      <a href="#"><img class="arrow" img src="../images/arrow.png" alt="arrow"></a>
     </section>
+    <article>
     <section class="tasktime">
       <div class="task">
         <h3>Задача</h3>
         <p>Разработка фирменного стиля проекта</p>
+      </div>
+      <div class="task">
+        <h3>Когда</h3>
+        <p>Сентябрь 2018 - Октябрь 2018</p>
       </div>
       <div class="task">
         <h3>Инструменты</h3>
@@ -29,22 +38,19 @@
         Adobe Illustrator
         Adobe Indesign</p>
       </div>
-      <div class="task">
-        <h3>Когда</h3>
-        <p>Сентябрь 2018 - Октябрь 2018</p>
-      </div>
     </section>
+    <div class="important">
     <h2>Центр удаления памяти - какой он? Конечно, ассоциирующийся с крепким ментальным здоровьем.</h2>
+  </div>
     <section class="problem-solution">
       <div class="problem">
         <h3>Проблема</h3>
         <p>Разработка фирменного стиля, который настраивал бы
-        на медитативный лад.  Не должно возникать ассоциаций с клиникой. Атмосфера организации больше напоминает центр йоги</p>
+        на медитативный лад.  Не должно возникать ассоциаций <br>с клиникой. Атмосфера организации больше напоминает центр йоги</p>
       </div>
       <div class="problem">
         <h3>Решение</h3>
-        <p>В проекте использованы спокойные целеные и фиолетовые тона. Линии логотипа плавные. В целом, проект построен на простой метафоре исчезновения, которая интригует
-        и привлекает клиента. </p>
+        <p>В проекте использованы спокойные целеные и фиолетовые тона. Линии логотипа плавные. В целом, проект построен на простой метафоре исчезновения, которая интригует<br>и привлекает клиента. </p>
       </div>
     </section>
     <img class="cards" img src="images/cards.png" alt="cards">
@@ -80,7 +86,11 @@
         <a href="#"><img src="images/m3a.png" alt="m3a"></a>
         <a href="#"><img src="images/m1a.png" alt="m1a"></a>
       </section>
+      </article>
       <footer>
       </footer>
+      <script src="../js/header.js" charset="utf-8"></script>
+      <script src="../js/burger.js" charset="utf-8"></script>
+      <script src="../js/scroll.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,10 +1,10 @@
 var scrolled;
 window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrolled > 400){
+    if(scrolled > 50){
         $("header").css({"background": "#F6F6F6"})
     }
-    if(500 > scrolled){
+    if(100 > scrolled){
         $("header").css({"background": "none"})
     }
 

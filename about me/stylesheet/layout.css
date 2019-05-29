@@ -76,6 +76,7 @@ header p {
   margin-left: 9.3em;
 
   font-size: 1.16rem;
+  font-weight: 500;
   line-height: 6em;
 }
 
@@ -99,7 +100,7 @@ header p {
 
 .arrow {
   position: absolute;
-  z-index: 111111;
+  z-index: 1;
   top: 34.3em;
   right: 48.45%;
 
@@ -198,7 +199,7 @@ h2 {
 .other-info {
   width: 15em;
 
-  line-height: 144%;
+  line-height: 180%;
 }
 
 footer {

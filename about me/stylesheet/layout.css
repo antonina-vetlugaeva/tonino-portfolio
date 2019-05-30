@@ -257,7 +257,14 @@ footer {
   }
 
   .myphoto {
-    height: 79em;
+    height: 91em;
+  }
+
+  .arrow {
+    width: 5.6em;
+    padding-top: 45em;
+
+    cursor: pointer;
   }
 
   h2 {

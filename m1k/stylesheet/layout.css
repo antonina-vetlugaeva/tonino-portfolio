@@ -6,7 +6,8 @@
 }
 
 html {
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
+
   font-size: 1.11vw;
 }
 
@@ -119,6 +120,8 @@ article {
 }
 
 .about a {
+  color: #2A3094;
+
   font-size: 1.2rem;
 }
 
@@ -200,6 +203,7 @@ h2 {
   margin-right: 9.3em;
   margin-bottom: 2.6em;
 
+  background-image: url(../../images/cards.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -376,6 +380,168 @@ footer {
 
     margin-top: 3em;
     margin-right: 4.4em;
+  }
+
+  .about {
+    height: 105em;
+
+    background-image: url(../../images/m1k-main-bg-mobile.png);
+    background-position: right no-repeat;
+    background-size: cover;
+  }
+
+  .about h1 {
+    padding-top: 4.2em;
+
+    font-size: 5rem;
+  }
+
+  .about p {
+    padding-top: 2em;
+
+    font-size: 2.5rem;
+  }
+
+  .about a {
+    font-size: 2.5rem;
+  }
+
+  .arrow {
+    top: 45.5em;
+  }
+
+  .tasktime {
+    display: inline-block;
+
+    padding-top: 10.8em;
+    padding-right: 9.3em;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .task {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  h3 {
+    color: #B6B6B6;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .task, .problem, .reasearch, p {
+    padding-top: 1em;
+
+    font-size: 2.5rem;
+    line-height: 144%;
+  }
+
+  h2 {
+    width: 87.5%;
+    margin-top: 3em;
+    margin-left: 0;
+
+    text-align: left;
+
+    font-size: 4rem;
+
+  }
+
+  .problem-solution {
+    display: inline-block;
+
+    width: 100%;
+    height: 10em;
+    padding-top: 10.3em;
+  }
+
+  .problem {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  .cards {
+    width: 93%;
+    height: 50em;
+    margin-top: 1.5em;
+    margin-bottom: 4em;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  h5 {
+    width: 25em;
+    padding-top: 0.7em;
+
+    font-size: 1.8rem;
+    line-height: 144%;
+  }
+
+  .research-process {
+    display: inline-block;
+  }
+
+  .small-image {
+    width: 100%;
+    height: 40em;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .part-of-research:first-of-type {
+    padding-top: 1.5em;
+    padding-bottom: 5.2em;
+  }
+
+  .final {
+    display: inline-block;
+
+    padding-top: 11.5em;
+  }
+
+  .firmstyle {
+    padding-top: 10.6em;
+  }
+
+  .haveyouseenit {
+    width: 100%;
+    margin-top: 11em;
+
+    background-color: #F6F6F6;
+  }
+
+  .haveyouseenit h4 {
+    padding-top: 2.4em;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+  }
+
+  .haveyouseenit-photos {
+    display: flex;
+
+    padding-top: 3.7em;
+    padding-bottom: 10.5em;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .preview {
+    width: 29.52em;
+    height: 22em;
+  }
+
+  footer {
+    height: 12em;
+
+    background-color: #5F5F5F;
   }
 
 }

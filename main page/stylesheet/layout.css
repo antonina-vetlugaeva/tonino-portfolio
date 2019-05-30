@@ -167,6 +167,8 @@ article {
 }
 
 .module a {
+  color: #2A3094;
+
   font-size: 1.2rem;
   font-weight: bold;
 }

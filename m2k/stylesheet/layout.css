@@ -211,32 +211,49 @@ h2 {
 }
 
 
-.mockup1 {
+.mockup1, .mockup2, .mockup3, .mockup4 {
   width: 86.5%;
-  height: 38.5em;
-  margin-top: 5.5em;
+  height: 42em;
   margin-right: 9.3em;
   margin-bottom: 0;
 
-  background-image: url(../../images/mockup1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
-.research p, .firmstyle p {
+.mockup1, .mockup2 {
+  margin-top: 5.5em;
+}
+
+.mockup3, .mockup4 {
+  margin-top: 3.5em;
+}
+
+.mockup1 {
+  background-image: url(../../images/mockup1.jpg);
+}
+
+.mockup2 {
+  background-image: url(../../images/mockup2.jpg);
+}
+
+.mockup3 {
+  background-image: url(../../images/mockup3.jpg);
+}
+
+.mockup4 {
+  background-image: url(../../images/mockup4.jpg);
+}
+
+.research p, .typography p {
   width: 86.5%;
 }
 
 h5 {
-  width: 25em;
   padding-top: 0.7em;
 
   font-size: 1.07rem;
   line-height: 144%;
-}
-
-h5:last-of-type {
-  margin-right: 6.5em;
 }
 
 .research-process {
@@ -268,7 +285,7 @@ h5:last-of-type {
   flex-wrap: wrap;
 }
 
-.firmstyle {
+.typography {
   padding-top: 8.8em;
 }
 
@@ -506,10 +523,6 @@ footer {
     display: inline-block;
 
     padding-top: 11.5em;
-  }
-
-  .firmstyle {
-    padding-top: 10.6em;
   }
 
   .haveyouseenit {

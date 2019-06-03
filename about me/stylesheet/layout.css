@@ -136,7 +136,7 @@ h2 {
   line-height: 144%;
 }
 
-#writeme {
+/*#writeme {
   width: 15em;
   height: 4em;
   margin-top: 4em;
@@ -149,6 +149,58 @@ h2 {
   box-shadow: 0.3em 0.3em 0.1em 0.06em rgba(0, 0, 0, .1);
 
   font-size: 1.3rem;
+}
+
+#writeme:hover {
+  color: #fff;
+  border: 0.1em #fff solid;
+  background-color: #2A3094;
+}*/
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 15em;
+  height: 4em;
+  margin-top: 4em;
+  padding-top: 1.38em;
+  padding-left: 1.19em;
+
+  cursor: pointer;
+  transition: all ease .5s;
+
+  color: #2A3094;
+  border: 0.1em #2A3094 solid;
+  background-color: transparent;
+  box-shadow: 0.3em 0.3em 0.1em 0.06em rgba(0, 0, 0, .1);
+
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  color: #9da1df;
+}
+
+.btn:before {
+  position: relative;
+  top: 5px;
+  left: -3.7em;
+
+  float: left;
+
+  width: 3em;
+  height: 0.01em;
+
+  content: "";
+  transition: all ease .5s;
+
+  border-bottom: 0.1em solid #2A3094;
+}
+
+.btn:hover:before {
+  left: 13em;
 }
 
 .whatican-pictures {
@@ -200,6 +252,10 @@ h2 {
   width: 15em;
 
   line-height: 180%;
+}
+
+.other-info a {
+  text-decoration: underline;
 }
 
 footer {

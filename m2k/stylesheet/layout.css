@@ -211,13 +211,14 @@ h2 {
 }
 
 
-.moodboard {
+.mockup1 {
   width: 86.5%;
   height: 38.5em;
   margin-top: 5.5em;
   margin-right: 9.3em;
   margin-bottom: 0;
 
+  background-image: url(../../images/mockup1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -340,7 +341,7 @@ footer {
 @media screen and (max-width: 768px) {
 
   header p {
-    margin-left: 4.4em;
+    margin-left: 4.7em;
     padding-top: 0;
 
     font-size: 2.2rem;

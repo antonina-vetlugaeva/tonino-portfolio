@@ -1,7 +1,11 @@
-$(".arrow").click(function() {
+$(document).ready(function(){
+	$(".about").on("click","a", function (event) {
+		event.preventDefault();
 
-  $("html, body").animate({scrollTop: $("header").height()+ 550 },"slow");
+		var id  = $(this).attr('href'),
 
-  return false;
+			top = $(id).offset().top;
 
-} );
+		$('body,html').animate({scrollTop: top}, 800);
+	});
+});

@@ -136,27 +136,6 @@ h2 {
   line-height: 144%;
 }
 
-/*#writeme {
-  width: 15em;
-  height: 4em;
-  margin-top: 4em;
-
-  cursor: pointer;
-
-  color: #2A3094;
-  border: 0.1em #2A3094 solid;
-  background-color: transparent;
-  box-shadow: 0.3em 0.3em 0.1em 0.06em rgba(0, 0, 0, .1);
-
-  font-size: 1.3rem;
-}
-
-#writeme:hover {
-  color: #fff;
-  border: 0.1em #fff solid;
-  background-color: #2A3094;
-}*/
-
 a {
   text-decoration: none;
 }

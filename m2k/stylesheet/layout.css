@@ -186,7 +186,7 @@ h2 {
   display: flex;
   flex-direction: row;
 
-  width: 100%;
+  width: 97%;
   height: 10em;
   padding-top: 5.4em;
   padding-right: 7em;
@@ -195,7 +195,7 @@ h2 {
 }
 
 .problem {
-  width: 19em;
+  width: 16em;
 }
 
 .animation {
@@ -210,22 +210,35 @@ h2 {
   background-size: contain;
 }
 
+.mockup3-mobile,
+.mockup4-mobile,
+.mockup5-mobile,
+.mockup6-mobile,
+.mockup7-mobile,
+.mockup8-mobile {
+  display: none;
+}
 
-.mockup1, .mockup2, .mockup3, .mockup4 {
+.mockup1,
+.mockup2,
+.mockup3,
+.mockup4,
+.mockup5,
+.mockup6,
+.mockup7 {
   width: 86.5%;
   height: 42em;
-  margin-right: 9.3em;
   margin-bottom: 0;
 
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.mockup1, .mockup2 {
+.mockup1, .mockup2, .mockup5 {
   margin-top: 5.5em;
 }
 
-.mockup3, .mockup4 {
+.mockup3, .mockup4, .mockup6, .mockup7 {
   margin-top: 3.5em;
 }
 
@@ -245,8 +258,20 @@ h2 {
   background-image: url(../../images/mockup4.jpg);
 }
 
-.research p, .typography p {
-  width: 86.5%;
+.mockup5 {
+  background-image: url(../../images/mockup5.jpg);
+}
+
+.mockup6 {
+  background-image: url(../../images/mockup6.jpg);
+}
+
+.mockup7 {
+  background-image: url(../../images/mockup7.jpg);
+}
+
+.research p, .typography p, .graphic p {
+  width: 75.5%;
 }
 
 h5 {
@@ -267,48 +292,8 @@ h5 {
   flex-wrap: wrap;
 }
 
-.small-image {
-  width: 29em;
-  height: 19em;
-
-  background-size: cover;
-}
-
-.final {
-  display: flex;
-  flex-direction: row;
-
-  width: 86.5%;
-  padding-top: 8.2em;
-
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.typography {
+.typography, .graphic {
   padding-top: 8.8em;
-}
-
-.branding {
-  margin-top: 5.5em;
-  margin-right: 9.3em;
-  margin-bottom: 0;
-}
-
-.branding img {
-  width: 100%;
-  height: auto;
-}
-
-.full-size-photo {
-  margin-top: 3.7em;
-  margin-right: 9.3em;
-  margin-bottom: 0;
-}
-
-.full-size-photo img {
-  width: 100%;
-  height: auto;
 }
 
 .haveyouseenit {
@@ -406,13 +391,13 @@ footer {
   .about {
     height: 105em;
 
-    background-image: url(../../images/m1k-main-bg-mobile.png);
+    background-image: url(../../images/pencil-poster-bg.png);
     background-position: right no-repeat;
     background-size: cover;
   }
 
   .about h1 {
-    padding-top: 4.2em;
+    padding-top: 7.9em;
 
     font-size: 5rem;
   }
@@ -453,6 +438,16 @@ footer {
     font-weight: bold;
   }
 
+  .research {
+    display: inline-block;
+
+    padding-top: 3.3em;
+  }
+
+  .research p, .typography p, .graphic p {
+    width: 86.5%;
+  }
+
   .task, .problem, .reasearch, p {
     padding-top: 1em;
 
@@ -484,14 +479,72 @@ footer {
     padding-bottom: 1em;
   }
 
-  .cards {
-    width: 93%;
-    height: 50em;
-    margin-top: 1.5em;
-    margin-bottom: 4em;
+  .animation,
+  .mockup3-mobile,
+  .mockup4-mobile,
+  .mockup5-mobile,
+  .mockup6-mobile,
+  .mockup7-mobile,
+  .mockup8-mobile {
+    display: inline-block;
 
-    background-position: center;
+    width: 86.5%;
+    height: 86em;
+    margin-left: 0;
+
+    background-position: left;
     background-size: cover;
+  }
+
+  .animation {
+    margin-top: 11.2em;
+  }
+
+  .mockup2,
+  .mockup5-mobile {
+    margin-top: 8em;
+  }
+
+  .mockup3-mobile,
+  .mockup4-mobile,
+  .mockup6-mobile,
+  .mockup7-mobile,
+  .mockup8-mobile,
+  .mockup7 {
+    margin-top: 5.2em;
+  }
+
+  .mockup3,
+  .mockup4,
+  .mockup5,
+  .mockup6 {
+    display: none;
+  }
+
+  .mockup3-mobile {
+    border: 0.1em solid #dbdbdb;
+    background-image: url(../../images/mockup3-mobile.png);
+  }
+
+  .mockup4-mobile {
+    background-image: url(../../images/mockup4-mobile.png);
+  }
+
+  .mockup5-mobile {
+    background-image: url(../../images/mockup5-mobile.png);
+  }
+
+  .mockup6-mobile {
+    border: 0.1em solid #dbdbdb;
+    background-image: url(../../images/mockup6-mobile.png);
+  }
+
+  .mockup7-mobile {
+    background-image: url(../../images/mockup7-mobile.jpg);
+  }
+
+  .mockup8-mobile {
+    background-image: url(../../images/mockup8-mobile.png);
   }
 
   h5 {
@@ -500,29 +553,6 @@ footer {
 
     font-size: 1.8rem;
     line-height: 144%;
-  }
-
-  .research-process {
-    display: inline-block;
-  }
-
-  .small-image {
-    width: 100%;
-    height: 40em;
-
-    background-position: center;
-    background-size: cover;
-  }
-
-  .part-of-research:first-of-type {
-    padding-top: 1.5em;
-    padding-bottom: 5.2em;
-  }
-
-  .final {
-    display: inline-block;
-
-    padding-top: 11.5em;
   }
 
   .haveyouseenit {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet/styles.css">
     <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
-    <title>Мое портфолио — Плакаты</title>
+    <title>Мое портфолио — Личный дневник</title>
   </head>
   <body>
     <header>
@@ -17,108 +17,112 @@
       </ul>
     </header>
     <section class="about">
-      <h1>Идея и брендинг Первые наработки</h1>
-      <p>Перед сном прокручиваете в голове события, которым лучше было бы  не случаться? Просто забудьте.</p>
-      <a href="https://portfolio.hse.ru/Project/43302">Перейти на сайт портфолио</a>
-      <a href="#"><img class="arrow" img src="../images/arrow.png" alt="arrow"></a>
+      <h1>Веб-плакат для центра удаления памяти</h1>
+      <p>Что такое веб-плакат? Давайте разберемся! И постараемся использовать свои знания в CSS и HTML.</p>
+      <a href="https://github.com/antonina-vetlugaeva/mydiary.github.io">Как это выглядит</a>
+      <a href="#task"><img class="arrow" img src="../images/arrow.png" alt="arrow"></a>
     </section>
     <article>
-      <section class="tasktime">
+      <section class="tasktime" id="task">
         <div class="task">
           <h3>Задача</h3>
-          <p>Разработка фирменного стиля проекта</p>
+          <p>Создание веб-постера по теме проекта</p>
         </div>
         <div class="task">
           <h3>Когда</h3>
-          <p>Сентябрь 2018 - Октябрь 2018</p>
+          <p>Ноябрь 2018 – Декабрь 2018</p>
         </div>
         <div class="task">
           <h3>Инструменты</h3>
           <p>Adobe Photoshop
-          Adobe Illustrator
-          Adobe Indesign</p>
+          Adobe Indesign
+          Atom
+          Github</p>
         </div>
       </section>
-      <div class="important">
-      <h2>Центр удаления памяти - какой он? Конечно, ассоциирующийся <br>с крепким ментальным здоровьем.</h2>
-    </div>
+      <h2>Создать новый жанр веб-искусства — задача не из легких. Но Б18ДЗО5 трудностей не боится!</h2>
       <section class="problem-solution">
         <div class="problem">
           <h3>Проблема</h3>
-          <p>Разработка фирменного стиля, который настраивал бы
-          на медитативный лад. Не должно возникать ассоциаций <br>с клиникой. Атмосфера организации больше напоминает центр йоги</p>
+          <p>А может, просто сделать лендинг? Или же что-то, приближенное
+          к плакату в привычном понимании? Об этом предстоит подумать. Главная задача — заинтересовать идеей проекта.</p>
         </div>
         <div class="problem">
           <h3>Решение</h3>
-          <p>В проекте использованы спокойные целеные и фиолетовые тона. Линии логотипа плавные. В целом, проект построен на простой метафоре исчезновения, которая интригует<br>и привлекает клиента. </p>
+          <p>Комбинация рекламного текста, знакомой фирменной графики
+          и интерактивных дополнений. Огромного количества информации этот плакат не даст, но заинтригует точно.</p>
         </div>
       </section>
-      <div class="cards"></div>
+      <div class="mockup1"></div>
       <section class="research">
         <h3>Поиск идей</h3>
-        <p>Как было упомянуто выше, большую роль в идее проекта играет метафора исчезновения. Отклеившиеся фото, оторванные лепестки, замазанные белым фрагменты рисунков - эти мимолетные образы вдохновляли меня в течение поиска итогового фирменного стиля.</p>
-        <div class="moodboard" style="background-image: url(../images/moodboard.png);"></div>
-        <h5>Мудборд</h5>
+        <p>Референсами к работе стали постеры, выполненные для <a href="../m2k/index.html">задания</a> по креативному проектированию. Я позаимствовала мотив исчезновения, а одно из анимированных изображений органично вписался в веб-плакат.</p>
         <div class="research-process">
-          <div class="part-of-research">
-            <div class="small-image" style="background-image: url(../images/flag.png);"></div>
-            <h5>Разработка флага</h5>
+          <div class="small-image" style="background-image: url(../images/mockup7-mobile.jpg);"></div>
+          <div class="small-image" style="background-image: url(../images/mockup8-mobile.png);"></div>
+          <h5>Графические плакаты для центра удаления памяти</h5>
+        </div>
+        <div class="style"></div>
+        <h5>Элементы стиля</h5>
+      </section>
+      <section class="main-page-of-diary">
+        <h3>Адаптивная верстка</h3>
+        <p>Адаптивная верстка меняет дизайн страницы в зависимости от платформы
+        и размера экрана. Она позволяет существенно экономить и не отрисовывать новый дизайн для каждого разрешения, а менять размеры и расположение отдельных элементов.</p>
+        <div class="responsive-photos">
+          <div class="responsive">
+            <img src="../images/t-shirt.png">
           </div>
-          <div class="part-of-research">
-            <div class="small-image" style="background-image: url(../images/logo-search.png);"></div>
-            <h5>Поиск логотипа</h5>
+          <div class="responsive">
+            <img src="../images/moodboard.png">
+          </div>
+          <div class="responsive">
+            <img src="../images/moodboard.png">
+          </div>
+          <div class="responsive">
+            <img src="../images/t-shirt.png">
           </div>
         </div>
       </section>
-      <h2>Я проработала нейминг организации и пришла к финальному названию “Силен”, от латинского слова “Silentium” - тишина. Тишина и спокойствие в мыслях.</h2>
-        <div class="final">
-          <div class="part-of-research">
-            <div class="small-image" style="background-image: url(../images/logo.png);"></div>
-            <h5>Финальный вариант логотипа</h5>
-            </div>
-          <div class="part-of-research">
-            <div class="small-image" style="background-image: url(../images/graphic-form.png);"></div>
-            <h5>Финальный графический образ и лозунг проекта -
-            “Если не помнишь, значит, не было”</h5>
-          </div>
-        </div>
-        <section class="firmstyle">
-          <h3>Фирменный стиль</h3>
-          <p>Используя цвета и фрагменты графических образов, я соединила их в систему, подчиненную единой логике и пластике. Помимо основных носителей я создала собственные: открытки   <br>и кулоны «‎на память», таблетки для улучшения памяти. Это подчеркнуло направление деятельности центра.</p>
-        </section>
-        <div class="branding"><img src="../images/branding.png"></div>
-        <div class="full-size-photo"><img src="../images/t-shirt.png"></div>
-        <div class="full-size-photo"><img src="../images/bag.png"></div>
-      </article>
-      <section class="haveyouseenit">
-        <h4>Уже видели это?</h4>
-        <div class="haveyouseenit-photos">
-          <a href="#">
-            <div class="preview">
-              <img src="../images/t-shirt.png">
-            </div>
-          </a>
-          <a href="#">
-            <div class="preview">
-              <img src="../images/moodboard.png">
-            </div>
-          </a>
-          <a href="#">
-            <div class="preview">
-              <img src="../images/moodboard.png">
-            </div>
-          </a>
-          <a href="#">
-            <div class="preview">
-              <img src="../images/t-shirt.png">
-            </div>
-          </a>
-        </div>
+      <section class="page-of-diary">
+        <h3>CSS эффекты</h3>
+        <p>Я использовала некоторые эффекты для воплощения метафоры исчезновения. Бледнеющие кнопки, исчезающие нежелательные слова в написанном мною четверостишие, пульсирующая тьма, почти поглощенная светом - спасибо коду за это (рифма случайна)</p>
+        <div class="code"></div>
+        <h5>Анимация пульсации тени</h5>
+        <div class="code"></div>
+        <h5>Изменение цвета  текста на невидимый белый при наведении</h5>
       </section>
-      <footer>
-      </footer>
-      <script src="../js/header.js" charset="utf-8"></script>
-      <script src="../js/burger.js" charset="utf-8"></script>
-      <script src="../js/scroll.js" charset="utf-8"></script>
+      <h2>“Очень поэтичная история” - прокомментировал как-то тему моего проекта один из моих преподавателей. Хочется верить. что веб-постер этой поэзии соответствует.</h2>
+    </article>
+    <section class="haveyouseenit">
+      <h4>Уже видели это?</h4>
+      <div class="haveyouseenit-photos">
+        <a href="#">
+          <div class="preview">
+            <img src="../images/t-shirt.png">
+          </div>
+        </a>
+        <a href="#">
+          <div class="preview">
+            <img src="../images/moodboard.png">
+          </div>
+        </a>
+        <a href="#">
+          <div class="preview">
+            <img src="../images/moodboard.png">
+          </div>
+        </a>
+        <a href="#">
+          <div class="preview">
+            <img src="../images/t-shirt.png">
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="../js/header.js" charset="utf-8"></script>
+    <script src="../js/burger.js" charset="utf-8"></script>
+    <script src="../js/scroll.js" charset="utf-8"></script>
   </body>
 </html>

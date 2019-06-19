@@ -99,7 +99,7 @@ article {
 
   background-image: url(../../images/webposter1-mockup1.png);
   background-repeat: no-repeat;
-  background-position: 30em bottom;
+  background-position: 30em 17em;
   background-size: 70% auto;
 }
 
@@ -113,7 +113,7 @@ article {
 }
 
 .about p {
-  width: 24em;
+  width: 21em;
   padding-top: 2em;
   padding-bottom: 4em;
 
@@ -130,7 +130,7 @@ article {
 .arrow {
   position: absolute;
   z-index: 1;
-  top: 39.3em;
+  top: 42.3em;
   right: 48.45%;
 
   width: 2.6em;
@@ -201,8 +201,8 @@ h2:last-of-type {
   width: 20em;
 }
 
-.mockup1, .mockup2, .mockup3, .mockup4 {
-  width: 100%;
+.mockup1, .style {
+  width: 86.5%;
   height: 40.5em;
   margin-right: 9.3em;
   margin-bottom: 2.6em;
@@ -213,40 +213,59 @@ h2:last-of-type {
 
 .mockup1 {
   height: 38.5em;
-  margin-top: 14.6em;
+  margin-top: 14.5em;
 
-  background-image: url(../../images/diary-mockup.png);
+  background-image: url(../../images/webposter1-mockup2.jpg);
 }
 
-.mockup2 {
+.style {
   height: 38.5em;
-  margin-top: 5.5em;
+  margin-top: 3.5em;
+  margin-bottom: 0.1em;
 
-  background-image: url(../../images/diary-main-page.png);
+  background-image: url(../../images/webposter1-style.jpg);
 }
 
-.mockup3 {
-  margin-top: 5.6em;
-
-  background-image: url(../../images/diary-week.png);
+.code img {
+  width: 86.5%;
+  height: 45em;
 }
 
-.mockup4 {
-  height: 38.5em;
-  margin-top: 7.1em;
-
-  background-image: url(../../images/diary-mockup-2.png);
+.circle {
+  padding-top: 5.4em;
 }
 
-.research, .page-of-diary {
+.poem {
+  padding-top: 3.6em;
+}
+
+.responsive-photos {
+  display: flex;
+  flex-direction: row;
+
+  width: 86.5%;
+  padding-top: 4.3em;
+  padding-bottom: 2.4em;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.responsive img{
+  width: 29em;
+  height: auto;
+  padding-top: 1em
+}
+
+.research, .css-effects {
   padding-top: 4.8em;
 }
 
-.main-page-of-diary {
-  padding-top: 7.4em;
+.responsive-page {
+  padding-top: 7em;
 }
 
-.research p, .main-page-of-diary p, .page-of-diary p {
+.research p, .responsive-page p, .css-effects p {
   width: 86.5%;
   padding-right: 4em;
 }
@@ -256,7 +275,7 @@ h2:last-of-type {
   flex-direction: row;
 
   width: 86.5%;
-  padding-top: 5.7em;
+  padding-top: 5.4em;
 
   justify-content: space-between;
   flex-wrap: wrap;
@@ -272,7 +291,7 @@ h5 {
 
 .small-image {
   width: 29em;
-  height: 40em;
+  height: 45em;
 
   background-size: cover;
 }
@@ -372,13 +391,14 @@ footer {
   .about {
     height: 105em;
 
-    background-image: url(../../images/diary-main-photo-mobile.png);
+    background-image: url(../../images/webposter1-mockup1-mobile.png);
     background-position: center;
     background-size: cover;
   }
 
   .about h1 {
-    padding-top: 7.9em;
+    width: 15em;
+    padding-top: 4.5em;
 
     font-size: 5rem;
   }
@@ -395,12 +415,14 @@ footer {
 
   .arrow {
     top: 45.5em;
+
+    filter: brightness(300);
   }
 
   .tasktime {
     display: inline-block;
 
-    padding-top: 7.5em;
+    padding-top: 7.9em;
     padding-right: 9.3em;
 
     flex-wrap: wrap;
@@ -449,7 +471,7 @@ footer {
     padding-bottom: 1em;
   }
 
-  .mockup1, .mockup2, .mockup3, .mockup4 {
+  .mockup1, .style {
     width: 86.5%;
     height: 40em;
     margin-bottom: 0;
@@ -458,23 +480,24 @@ footer {
   }
 
   .mockup1 {
-    margin-top: 8.5em;
+    margin-top: 11.2em;
   }
 
-  .mockup2, .mockup3 {
-    margin-top: 7.6em;
+  .style {
+    margin-top: 5.2em;
   }
 
-  .mockup4 {
-    margin-top: 9.8em;
-  }
 
   h5 {
     width: 25em;
-    padding-top: 0.7em;
+    padding-top: 1.1em;
 
     font-size: 1.8rem;
     line-height: 144%;
+  }
+
+  h5:last-of-type {
+    padding-bottom: 0.8em;
   }
 
   .research-process {
@@ -490,14 +513,38 @@ footer {
 
   .small-image:first-of-type {
     margin-bottom: 5.5em;
+
+    background-size: 60em 80em;
   }
 
-  .research, .page-of-diary {
-    padding-top: 10.2em;
+  .circle {
+    padding-top: 8.1em;
   }
 
-  .main-page-of-diary {
+  .research {
+    padding-top: 10.8em;
+  }
+
+  .css-effects {
+    padding-top: 6.5em;
+  }
+
+  .responsive-page {
     padding-top: 10.7em;
+  }
+
+  .responsive-photos {
+    display: inline-block;
+
+    width: 86.5%;
+    padding-top: 6.9em;
+    padding-bottom: 0;
+  }
+
+  .responsive img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 4.3em;
   }
 
   .haveyouseenit {

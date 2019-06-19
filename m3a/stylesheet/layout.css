@@ -99,8 +99,9 @@ article {
 
   background-image: url(../../images/webposter2-main.png);
   background-repeat: no-repeat;
-  background-position: center 17em;
-  background-size: 70% auto;
+  background-attachment: scroll;
+  background-position: center 13.9em;
+  background-size: 80% auto;
 }
 
 .about h1 {
@@ -125,6 +126,16 @@ article {
   color: #2A3094;
 
   font-size: 1.2rem;
+}
+
+.about img:not(.arrow) {
+  position: absolute;
+  top: 14em;
+  left: 78%;
+
+  width: 10em;
+
+  transform: rotate(-90deg);
 }
 
 .arrow {

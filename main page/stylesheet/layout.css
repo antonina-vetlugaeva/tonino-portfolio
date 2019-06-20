@@ -209,12 +209,17 @@ article {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
+
   height: 12em;
   margin-top: 15.6em;
   padding-top: 3.2em;
   padding-left: 9.3em;
 
   background-color: #5F5F5F;
+
+  justify-content: space-between;
 }
 
 footer p, h3, h4, a {
@@ -224,6 +229,16 @@ footer p, h3, h4, a {
 footer p {
   font-size: 1rem;
   line-height: 140%;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+}
+
+#share {
+  padding-bottom: 0.6em;
+  padding-left: 1em;
 }
 
 footer h3 {
@@ -272,10 +287,15 @@ a.pi-h { background: #c8232c; }
 
 .share-buttons-container {
   display: flex;
+  float: right;
+
+  padding-right: 9.3em;
 
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 

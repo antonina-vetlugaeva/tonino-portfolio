@@ -133,6 +133,33 @@ header p {
   box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
 }
 
+#secondcircle {
+  z-index: -1;
+
+  width: 18em;
+  height: 18em;
+  margin-top: 6em;
+  margin-left: 0;
+}
+
+#thirdcircle {
+  z-index: -1;
+
+  width: 10em;
+  height: 10em;
+  margin-top: 20em;
+  margin-left: 45%;
+}
+
+#fourthcircle {
+  z-index: -1;
+
+  width: 8em;
+  height: 8em;
+  margin-top: 19em;
+  margin-left: 13em;
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);

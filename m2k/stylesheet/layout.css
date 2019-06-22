@@ -679,8 +679,18 @@ a.pi-h {
   }
 
   .preview {
-    width: 29.52em;
-    height: 22em;
+    width: 29.2em;
+    height: 25.2em;
+    padding-top: 1.8em;
+  }
+
+  .haveyouseenit-photos a:last-of-type {
+    display: none;
+  }
+
+  .preview img {
+    width: 100%;
+    height: auto;
   }
 
   footer {

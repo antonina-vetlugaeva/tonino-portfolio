@@ -310,21 +310,37 @@ h5:last-of-type {
 
   width: 88%;
   padding-top: 2em;
-  padding-bottom: 8.7em;
+  padding-bottom: 9.1em;
   padding-left: 9.3em;
 
   justify-content: space-between;
 }
 
+.haveyouseenit-photos a {
+  text-decoration: none;
+}
+
+.haveyouseenit-photos h5 {
+  width: 100%;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.haveyouseenit-photos h5:hover {
+  color: #2A3094;
+}
+
 .preview {
-  width: 14em;
-  height: 10em;
+  width: 18em;
+  height: 14em;
   padding-top: 1.8em;
 }
 
 .preview img {
   width: 100%;
-  height: auto;
+  height: 12em;
 }
 
 footer {
@@ -632,8 +648,18 @@ a.pi-h {
   }
 
   .preview {
-    width: 29.52em;
-    height: 22em;
+    width: 29.2em;
+    height: 25.2em;
+    padding-top: 1.8em;
+  }
+
+  .haveyouseenit-photos a:last-of-type {
+    display: none;
+  }
+
+  .preview img {
+    width: 100%;
+    height: auto;
   }
 
   footer {

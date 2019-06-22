@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet/styles.css">
     <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="../js/wow.min.js" charset="utf-8"></script>
     <title>Мое портфолио</title>
   </head>
   <body>
     <header>
       <a href="#" class="menu-trigger"><img src="../images/burger.svg"></a>
-      <p>Силен. Центр удаления памяти</p>
+      <p><a href="#">Силен. Центр удаления памяти</a></p>
       <ul>
         <li><a href="#" id="active">Работы</a></li>
         <li><a href="../about me/index.html" >Обо мне</a></li>
       </ul>
     </header>
     <section class="about">
+      <div class="shining-circle"></div>
       <h1>Если не помнишь, значит, <span class="purpletext">не было</span></h1>
-      <p>В первые дни обучения в школе дизайна перед нами встала непростая задача — определиться с темой проекта, над которым мы будем работать целый год. Так в моей голове возник центр удаления памяти – потому, что всем нам хочется о чем-то забыть.</p>
+      <p>В первые дни обучения в школе дизайна перед нами встала непростая задача — определиться с темой проекта, над которым мы будем работать целый год. Так в моей голове возник центр удаления памяти — потому, что всем нам хочется о чем-то забыть.</p>
       <a href="#1st"><img class="arrow" img src="../images/arrow.png" alt="arrow"></a>
     </section>
     <article>
-      <div class="square" style="background-color: #5D6496;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square1"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2 id="1st">Идея и брендинг.<br>Первые наработки.</h2>
           <p>Перед сном прокручиваете в голове события, которым лучше было бы  не случаться? Просто забудьте.</p>
@@ -31,17 +33,17 @@
         </div>
         <div class="module-photo"> <img src="../images/1st.png"></div>
       </section>
-      <div class="square" style="background-color: #DF4C3B;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square2"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2>Кодинг. Практика.<br>Личный дневник.</h2>
-          <p>Мы делаем первые шаги в написании кода. Задача – создание личного дневника. Что же, осмелюсь преодолеть все пределы искренности.</p>
+          <p>Мы делаем первые шаги в написании кода.<br>Задача — создание личного дневника. Что же, осмелюсь преодолеть все пределы искренности.</p>
           <a href="../m1a/index.html">Узнать больше</a>
         </div>
         <div class="module-photo"><img src="../images/2nd.png"></div>
       </section>
-      <div class="square" style="background-color: #8DD85A;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square3"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2>Плакаты шрифтовые<br>и графические.</h2>
           <p>Плакаты, представляющие стиль проекта в рамках типографического и графического решения.</p>
@@ -49,26 +51,26 @@
         </div>
           <div class="module-photo"><img src="../images/3rd.png"></div>
       </section>
-      <div class="square" style="background-color: #6D71AA;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square4"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2>Веб-плакат для центра удаления памяти.</h2>
-          <p>Что такое веб-плакат? Давайте разберемся! И постараемся использовать свои знания в CSS и HTML.</p>
+          <p>Что такое веб-плакат? Давайте разберемся! И&nbsp;постараемся использовать свои знания в CSS и&nbsp;HTML.</p>
           <a href="../m2a/index.html">Смотреть кейс</a>
         </div>
           <div class="module-photo"><img src="../images/4th.png"></div>
       </section>
-      <div class="square" style="background-color: #A7C0D5;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square5"></div>
+      <section class="module wow fadeIn">
         <div class="text">
         <h2>Книга о библиотеке.</h2>
-          <p>Стертые воспоминания исчезают бесследно? Нет. Вы всегда можете вернуть их, если захотите :)</p>
+          <p>Стертые воспоминания исчезают бесследно? Нет. Вы&nbsp;всегда можете вернуть их, если захотите :)</p>
           <a href="../m3k/index.html">Посетить библиотеку</a>
         </div>
           <div class="module-photo"><img src="../images/5th.png"></div>
       </section>
-      <div class="square" style="background-color: #1DD39A;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square6"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2>Интерактивный <br>веб-плакат.</h2>
           <p>Вникли в жанр веб-плаката, и стараемся подключать к нему JavaScript.</p>
@@ -76,32 +78,23 @@
         </div>
           <div class="module-photo"><img src="../images/6th.png"></div>
       </section>
-      <div class="square" style="background-color: #dccf26;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square7"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2>Силен. Ребрендинг.</h2>
-          <p>Меняли тему проекта, приближая ее к реальности.Так центр удаления памяти стал... деревней.</p>
+          <p>Меняли тему проекта, приближая ее к&nbsp;реальности. Так центр удаления памяти стал... деревней.</p>
           <a href="../m4k/index.html">Как это произошло</a>
         </div>
-          <div class="module-photo"><img src="../images/7th.png"></div>
+        <div class="module-photo"><img src="../images/7th.png"></div>
       </section>
-      <div class="square" style="background-color: #000;"></div>
-      <section class="module">
+      <div class="square wow slideInLeft" id="square8"></div>
+      <section class="module wow fadeIn">
         <div class="text">
           <h2>Сайт-портфолио <br>о проекте.</h2>
           <p>Вы сейчас на нем :) А я просто покажу, как этот сайт создавался и какие фишки в нем воплощены.</p>
           <a href="../m4a/index.html">Как это работает</a>
         </div>
-          <div class="module-photo"><img src="../images/8th.png"></div>
-      </section>
-      <div class="square" style="background-color: #000;"></div>
-      <section class="module">
-        <div class="text">
-          <h2>Инфографика<br>по проекту.</h2>
-          <p>Шокирующие, странные, неуместные цифры, которые скажут больше, чем любое портфолио.</p>
-          <a href="#">Давай посмотрим!</a>
-        </div>
-          <div class="module-photo"><img src="../images/9th.png"></div>
+        <div class="module-photo"><img src="../images/8th.png"></div>
       </section>
     </article>
     <footer>
@@ -134,6 +127,7 @@
     </div>
 
     </footer>
+    <script src="../js/woow.js" charset="utf-8"></script>
     <script src="../js/share.js" charset="utf-8"></script>
     <script src="../js/header.js" charset="utf-8"></script>
     <script src="../js/burger.js" charset="utf-8"></script>

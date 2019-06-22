@@ -93,6 +93,8 @@ header p {
 }
 
 .about h1 {
+  z-index: 11;
+
   padding-top: 4.4em;
 
   font-size: 3rem;
@@ -101,6 +103,8 @@ header p {
 }
 
 .about p {
+  z-index: 11;
+
   width: 43em;
   padding-top: 3.3em;
 
@@ -110,6 +114,50 @@ header p {
 
 .purpletext {
   color: #2A3094;
+}
+
+.shining-circle {
+  position: absolute;
+  z-index: 1;
+
+  width: 25em;
+  height: 25em;
+  margin-top: 7em;
+  margin-left: 43%;
+
+  animation: pulse 3s infinite;
+
+  border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+  }
+  50% {
+      -webkit-box-shadow: 0 0 2.5em 1.9em rgba(82, 85, 136, 80);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+    box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+  }
+  50% {
+      -moz-box-shadow: 0 0 1.3em 1.9em rgba(82, 85, 136, 80);
+      box-shadow: 0 0 2.5em 1.9em rgba(82, 85, 136, 80);
+  }
+  100% {
+      -moz-box-shadow: 0 0 1.3em 1.3em rgba(82, 85, 136, 80);
+      box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+  }
 }
 
 .arrow {
@@ -122,16 +170,46 @@ header p {
   cursor: pointer;
 }
 
-.square:first-of-type {
+#square1 {
   width: 8.5em;
   height: 0.7em;
   margin-top: 9.1em;
+
+  background-color: #5D6496;
 }
 
 .square {
   width: 8.5em;
   height: 0.7em;
   margin-top: 16.4em;
+}
+
+#square2 {
+  background-color: #DF4C3B;
+}
+
+#square3 {
+  background-color: #8DD85A;
+}
+
+#square4 {
+  background-color: #6D71AA;
+}
+
+#square5 {
+  background-color: #A7C0D5;
+}
+
+#square6 {
+  background-color: #1DD39A;
+}
+
+#square7 {
+  background-color: #dccf26;
+}
+
+#square8 {
+  background-color: #000;
 }
 
 .module {
@@ -342,7 +420,6 @@ a.pi-h {
     font-size: 2.2rem;
   }
 
-
   header a:not(.menu-trigger) {
     padding: 0;
   }
@@ -364,6 +441,14 @@ a.pi-h {
     padding-left: 9.3em;
 
     background-color: #F6F6F6;
+  }
+
+  .shining-circle {
+    top: 40em;
+    right: 9.3em;
+
+    width: 35em;
+    height: 35em;
   }
 
   .about h1 {
@@ -403,7 +488,7 @@ a.pi-h {
     flex-wrap: wrap;
   }
 
-  .square:first-of-type {
+  #square1 {
     width: 17em;
     height: 1.4em;
     margin-top: 17.2em;

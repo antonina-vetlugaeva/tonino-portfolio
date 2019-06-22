@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheet/styles.css">
-    <title>Тонино портфолио</title>
+    <script src="../js/wow.min.js" charset="utf-8"></script>
+    <title>Мое портфолио — Интерактивный веб-плакат</title>
   </head>
   <body>
     <body>
       <header>
         <a href="#" class="menu-trigger"><img src="../images/burger.svg"></a>
-        <p>Силен. Центр удаления памяти</p>
+        <p><a href="../main page/index.html">Силен. Центр удаления памяти</a></p>
         <ul>
           <li><a href="../main page/index.html" id="active">Работы</a></li>
           <li><a href="../about me/index.html">Обо мне</a></li>
@@ -31,13 +32,13 @@
           </div>
           <div class="task">
             <h3>Когда</h3>
-            <p>Январь 2019 – Март 2019</p>
+            <p>Январь 2019 — Март 2019</p>
           </div>
           <div class="task">
             <h3>Инструменты</h3>
             <p>Adobe Photoshop
-            Blender 3D
-            Adobe After Effects
+            Blender 3D<br>
+            Adobe After Effects<br>
             Adobe Indesign</p>
           </div>
         </section>
@@ -57,7 +58,7 @@
         <div class="full-size" id="book"><img src="../images/book-mockup.jpg"></div>
         <section class="research">
           <h3>Поиск идей</h3>
-          <p>Были просмотрены фото интерьеров, выполненных в пастельных тонах.  Возвращение воспоминаний может стать травматичным процессом, а такие комнаты внушают доверие и спокойствие. Работая над экскизом экстерьера, я хотела сделать форму здания особенной. Лотос в буддизме симфолизирует мудрость, нирвану и духовное раскрытие.</p>
+          <p>Были просмотрены фото интерьеров, выполненных в пастельных тонах.  Возвращение воспоминаний может стать травматичным процессом, а такие комнаты внушают доверие и спокойствие. Работая над экскизом экстерьера, я хотела сделать форму здания особенной. Лотос в буддизме симфолизирует мудрость, нирвану и&nbsp;духовное раскрытие.</p>
           <div class="research-process">
             <div class="part-of-research">
               <div class="small-image"><img src="../images/library-moodboard.png"></div>
@@ -71,31 +72,31 @@
         </section>
         <section class="architect">
           <h3>Особенности архитектуры</h3>
-          <p>Как было сказано выше, библиотека представляет из себя двухэтажное строение, повторяющее форму лотоса. Территория окружена парковой зоной. Панорамные окна снаружи являются зеркалами. Проходя мимо библиотеки, загляните в одно из них и подумайте: готовы ли вы к встрече с собой?</p>
+          <p>Как было сказано выше, библиотека представляет из себя двухэтажное строение, повторяющее форму лотоса. Территория окружена парковой зоной. Панорамные окна снаружи являются зеркалами. Проходя мимо библиотеки, загляните в одно из&nbsp;них и подумайте: готовы ли вы к встрече с собой?</p>
           <div class="full-size" id="building"><img src="../images/building.png"></div>
         </section>
-        <h2>Интерьер библиотеки должен быть спокойным, уютным и расслабленным. </h2>
+        <h2>Интерьер библиотеки должен быть спокойным, уютным и&nbsp;расслабленным. </h2>
         <section class="rooms">
           <h3>Пространство</h3>
-          <p>Добро пожаловать! Атмосфера библиотеки с самого порога настраивает на позитивный лад, а страх перед прошлым постепенно улетучивается.
+          <p>Добро пожаловать! Атмосфера библиотеки с самого порога настраивает на&nbsp;позитивный лад, а страх перед прошлым постепенно улетучивается.
           Воспользуйтесь интерактивным планом здания, чтобы ознакомиться с каждой комнатой, выполненной в 3D.</p>
           <div class="map1">
             <div class="distribution-map">
-              <button class="map-point" style="top: 320px; left: 550px;">
+              <button class="map-point" id="first">
                   <div class="content">
                       <div class="centered-y">
                         <img src="../images/reception.png">
                       </div>
                   </div>
               </button>
-              <button class="map-point" style="top: 300px; left: 150px">
+              <button class="map-point" id="second">
                   <div class="content">
                       <div class="centered-y">
                         <img src="../images/library-room.png">
                       </div>
                   </div>
               </button>
-              <button class="map-point" style="top: 400px; right: 300px; ">
+              <button class="map-point" id="third">
                   <div class="content">
                       <div class="centered-y">
                         <img src="../images/caffee.png">
@@ -106,15 +107,39 @@
           </div>
           <div class="map2">
             <div class="distribution-map">
-              <button class="map-point" style="top: 300px; left: 150px">
+              <button class="map-point" id="forth">
                   <div class="content">
                       <div class="centered-y">
-                        <img src="../images/library-room.png">
+                        <img src="../images/reading-room.png">
                       </div>
                   </div>
               </button>
             </div>
           </div>
+        </section>
+        <section class="navigation">
+          <h3>Навигация</h3>
+          <p>На основе фирменного стиля была разработана система навигации по библиотеке. Каждый элемент навигации находится в движении. Ведь каким
+          бы тяжелым не было прошлое, всегда нужно двигаться дальше.</p>
+          <div class="full-size" id="navigation"><img src="../images/navigation.jpg"></div>
+          <div class="full-size" id="navigation-to-room"><img src="../images/navigation-to-room.png"></div>
+        </section>
+        <section class="video">
+          <h3>Видео</h3>
+          <p>Одним из заданий модуля было сделать облет здания и небольшой анимационный ролик в 3D. Смотрите сами :)</p>
+          <iframe  src="https://www.youtube.com/embed/-nLFZx8nIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe  src="https://www.youtube.com/embed/ag3VtJ5CLig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <h2>Завершающий этап — разработка макета презентационного многостраничного издания о пространстве.</h2>
+        <section class="book">
+          <h3>Книга</h3>
+          <p>Я создала многостраничное издание, которое включает в себя не только все результаты работы по проектированию библиотеки, но и некоторые интерактивные элементы.</p>
+          <div class="full-size" id="book-fact"><img src="../images/stick.png"></div>
+          <h5>Стикеры, перекрывающие важную информацию – метафора возвращения воспоминаний.</h5>
+          <div class="full-size" id="book-fact"><img src="../images/hole.png"></div>
+          <h5>Эту же метафоры преследуют отверстия в некоторых страницах.</h5>
+          <div class="full-size" id="book-fact"><img src="../images/infography.png"></div>
+          <h5>В конце книги приведены интересные цифры, касающиеся библиотеки и самого центра “Силен”</h5>
         </section>
       </article>
       <section class="haveyouseenit">
@@ -174,6 +199,7 @@
       <script src="../js/header.js" charset="utf-8"></script>
       <script src="../js/burger.js" charset="utf-8"></script>
       <script src="../js/scroll.js" charset="utf-8"></script>
+      <script src="../js/woow.js" charset="utf-8"></script>
     </body>
   </body>
 </html>

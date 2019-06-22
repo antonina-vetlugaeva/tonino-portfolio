@@ -93,7 +93,7 @@ header p {
 }
 
 .about h1 {
-  z-index: 11;
+  z-index: 111;
 
   padding-top: 4.4em;
 
@@ -103,7 +103,7 @@ header p {
 }
 
 .about p {
-  z-index: 11;
+  z-index: 111;
 
   width: 43em;
   padding-top: 3.3em;
@@ -118,19 +118,33 @@ header p {
 
 .shining-circle {
   position: absolute;
-  z-index: 1;
+  z-index: -1111;
 
   width: 25em;
   height: 25em;
   margin-top: 7em;
-  margin-left: 43%;
+  margin-left: 50%;
 
   animation: pulse 3s infinite;
 
+  color: #525588;
   border-radius: 50%;
   border-radius: 50%;
   background: transparent;
-  box-shadow: 0 0 2.5em 1.3em rgba(82, 85, 136, 80);
+  box-shadow: 0 0 2.5em 1.3em;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
 }
 
 #secondcircle {
@@ -139,7 +153,7 @@ header p {
   width: 18em;
   height: 18em;
   margin-top: 6em;
-  margin-left: 0;
+  margin-left: 20em;
 }
 
 #thirdcircle {
@@ -154,10 +168,11 @@ header p {
 #fourthcircle {
   z-index: -1;
 
-  width: 8em;
-  height: 8em;
-  margin-top: 19em;
-  margin-left: 13em;
+  width: 15em;
+  height: 15em;
+  margin-top: 20em;
+  margin-left: 0;
+  padding: 0;
 }
 
 @-webkit-keyframes pulse {
@@ -476,6 +491,34 @@ a.pi-h {
 
     width: 35em;
     height: 35em;
+  }
+
+  #secondcircle {
+    z-index: -1;
+
+    width: 10em;
+    height: 10em;
+    margin-top: 1em;
+    margin-left: 0;
+  }
+
+  #thirdcircle {
+    z-index: -1;
+
+    width: 10em;
+    height: 10em;
+    margin-top: 20em;
+    margin-left: 45%;
+  }
+
+  #fourthcircle {
+    z-index: -1;
+
+    width: 15em;
+    height: 15em;
+    margin-top: 20em;
+    margin-left: 0;
+    padding: 0;
   }
 
   .about h1 {

@@ -93,6 +93,7 @@ header p {
 }
 
 .about h1 {
+  position: absolute;
   z-index: 111;
 
   padding-top: 4.4em;
@@ -103,10 +104,11 @@ header p {
 }
 
 .about p {
+  position: absolute;
   z-index: 111;
 
   width: 43em;
-  padding-top: 3.3em;
+  padding-top: 14.9em;
 
   font-size: 1.5rem;
   line-height: 144%;
@@ -203,10 +205,11 @@ header p {
 }
 
 .arrow {
+  position: absolute;
   z-index: 1;
 
   width: 2.6em;
-  padding-top: 7.9em;
+  padding-top: 32.5em;
   padding-bottom: 3.4em;
 
   cursor: pointer;
@@ -530,7 +533,7 @@ a.pi-h {
 
   .about p {
     width: 22em;
-    padding-top: 4em;
+    padding-top: 23.7em;
 
     font-size: 2.5rem;
     line-height: 144%;
@@ -538,7 +541,7 @@ a.pi-h {
 
   .about img {
     width: 5.6em;
-    padding-top: 17.9em;
+    padding-top: 87em;
 
     cursor: pointer;
   }

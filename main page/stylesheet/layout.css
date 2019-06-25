@@ -515,13 +515,13 @@ a.pi-h {
   }
 
   #fourthcircle {
-    z-index: -1;
+  z-index: -1;
 
-    width: 15em;
-    height: 15em;
-    margin-top: 20em;
-    margin-left: 0;
-    padding: 0;
+  width: 15em;
+  height: 15em;
+  margin-top: 20em;
+  margin-left: 0;
+  padding: 0;
   }
 
   .about h1 {

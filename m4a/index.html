@@ -4,92 +4,149 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet/styles.css">
-    <title>Тонино портфолио</title>
+    <script src="../js/wow.min.js" charset="utf-8"></script>
+    <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <title>Мое портфолио — Силен. Ребрендинг.</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <li>Силен. Центр удаления памяти.</li>
-        <a href="#">Работы</a>
-        <a href="#">Обо мне</a>
-      </nav>
+    <header class="wow slideInDown">
+      <a href="#" class="menu-trigger"><img src="../images/burger.svg"></a>
+      <p><a href="../main page/index.html">Силен. Центр удаления памяти</a></p>
+      <ul>
+        <li><a href="../main page/index.html" id="active">Работы</a></li>
+        <li><a href="../about me/index.html">Обо мне</a></li>
+      </ul>
     </header>
-    <section class="about">
-      <h1>Если не помнишь, значит, не было</h1>
-      <p>В первые дни обучения в школе дизайна перед нами встала непростая задача - определиться с темой проекта, над которым мы будем работать целый год. Так в моей голове возник центр удаления памяти - потому, что всем нам хочется о чем-то забыть.</p>
-      <img class="arrow" img src="images/arrow.png" alt="arrow">
-    </section>
-    <section class="module">
-      <div class="square1"></div>
-      <h2>Идея и брендинг Первые наработки</h2>
-      <p>Перед сном прокручиваете в голове события, которым лучше было бы  не случаться? Просто забудьте.</p>
-      <a href="#">Давай посмотрим!Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">01</div>
-    </section>
-    <section class="module">
-      <div class="square2"></div>
-      <h2><Кодинг. Практика. Личный дневник./h2>
-      <p>Мы делаем первые шаги в написании кода. Задача - создание личного дневника. Что же, осмелюсь преодолеть все пределы искренности.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">01</div>
-    </section>
-    <section class="module">
-      <div class="square3"></div>
-      <h2>Плакаты шрифтовые и графические.</h2>
-      <p>Плакаты, представляющие стиль проекта в рамках типографического и графического решения.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">02</div>
-    </section>
-    <section class="module">
-      <div class="square4"></div>
-      <h2>Веб-плакат для центра удаления памяти.</h2>
-      <p>Что такое веб-плакат? Давайте разберемся! И постараемся использовать свои знания в CSS и HTML.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">02</div>
-    </section>
-    <section class="module">
-      <div class="square5"></div>
-      <h2>Книга о библиотеке</h2>
-      <p>Стертые воспоминания исчезают бесследно? Нет. Вы всегда можете вернуть их, если захотите :)</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">03</div>
-    </section>
-    <section class="module">
-      <div class="square6"></div>
-      <h2>Интерактивный веб-плакат</h2>
-      <p>Вникли в жанр веб-плаката, и стараемся подключать к нему JavaScript.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">03</div>
-    </section>
-    <section class="module">
-      <div class="square7"></div>
-      <h2>Силен. Ребрендинг</h2>
-      <p>Меняли тему проекта, приближая ее к реальности.Так центр удаления памяти стал... деревней.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">04</div>
-    </section>
-    <section class="module">
-      <div class="square8"></div>
-      <h2>Сайт-портфолио о проекте.</h2>
+    <section class="about wow fadeIn">
+      <h1>Сайт-портфолио о проекте</h1>
       <p>Вы сейчас на нем :) А я просто покажу, как этот сайт создавался и какие фишки в нем воплощены.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">04</div>
+      <a href="https://portfolio.hse.ru/project/54732">Перейти на сайт портфолио</a>
+      <a href="#task"><img class="arrow" img src="../images/arrow.png" alt="arrow"></a>
     </section>
-    <section class="module">
-      <div class="square9"></div>
-      <h2>Инфографика по проекту</h2>
-      <p>Шокирующие, странные, неуместные цифры, которые скажут больше, чем любое портфолио.</p>
-      <a href="#">Давай посмотрим!</a>
-      <img class="" img src="images/.png" alt="">
-      <div class="module-number">∞</div>
+    <article>
+      <section class="tasktime wow fadeIn" id="task">
+        <div class="task">
+          <h3>Задача</h3>
+          <p>Портфолио по итогам 1-го курса</p>
+        </div>
+        <div class="task">
+          <h3>Когда</h3>
+          <p>Апрель 2019 — Июнь 2019</p>
+        </div>
+        <div class="task">
+          <h3>Инструменты</h3>
+          <p>Adobe Photoshop<br>
+          Atom<br>
+          Github</p>
+        </div>
+      </section>
+      <h2 class="wow fadeIn">Первый курс неумолимо подходит к&nbsp;концу. Попробую проследить, чему же я&nbsp;научилась за этот год.</h2>
+      <section class="problem-solution wow fadeIn">
+        <div class="problem">
+          <h3>Проблема</h3>
+          <p>Создание лаконичного портфолио, которое показало бы самые яркие работы из заданий первокурсников направления “Дизайн и&nbsp;программирование”. Никакой “воды”, только главные стороны нашей работы.</p>
+        </div>
+        <div class="problem">
+          <h3>Решение</h3>
+          <p>Мое решение — минимализм и четкая композиция отображения тех работ, которые отражают мою работу на первом курсе вышки. Для всех страниц создана единая структура стиля и изложения.  </p>
+        </div>
+      </section>
+      <div class="full-size wow fadeIn" id="poster"><img src="../images/m4a-mockup1.png"></div>
+      <section class="research">
+        <h3>Поиск идей</h3>
+        <p>Заимствуя идеи у более “продвинутых” коллег, я&nbsp;поняла, что не все то золото, что&nbsp;выложено на бехансе. Тогда я, не без помощи кураторов, отказываюсь от&nbsp;бессмысленных украшательств, и&nbsp;создаю “чистый” и лаконичный сайт о своем проекте. </p>
+        <div class="research-process wow fadeIn">
+          <div class="part-of-research">
+            <div class="small-image"><img src="../images/m4a-map.png"></div>
+            <h5>Первоначальная карта сайта</h5>
+          </div>
+          <div class="small-image">
+            <div class="sketch"><img src="../images/m4a-figma.png"></div>
+            <h5>Работа в программе Figma</h5>
+          </div>
+        </div>
+      </section>
+      <section class="mainpage wow fadeIn">
+        <h3>Главная страница</h3>
+        <p>Без лишних предисловий (почти) гостям сайта предлагается просмотр работ первого курса. Яркие иллюстрации призваны заинтересовать, а&nbsp;короткие описания оставляют интригу.</p>
+        <div class="full-size" id="first-photo"><img src="../images/m4a-mainpage.png"></div>
+        <div class="full-size" id="second-photo"><img src="../images/m4a-main-card.png"></div>
+        <h5>Карточка проекта</h5>
+      </section>
+      <section class="navigation wow fadeIn">
+        <h3>Меню</h3>
+        <p>Потеряться в портфолио сложно, ведь меню содержит лишь два раздела — список работ и&nbsp;информацию обо мне. Фиксированная шапка сайта позволяет быстро переходить на нужную страницу.</p>
+        <div class="full-size" id="first-photo"><img src="../images/m4a-navigation.jpg"></div>
+      </section>
+      <section class="me wow fadeIn">
+        <h3>Обо мне</h3>
+        <p>Краткая биография, навыки и факты — совсем необязательно подчинять себе любимой целый сайт :) Однако, хоть портфолио посвящено проекту, а не мне лично, пара слов об авторке, все-таки, необходима.</p>
+        <div class="full-size" id="first-photo"><img src="../images/m4a-aboutme.png"></div>
+      </section>
+      <section class="website wow fadeIn">
+        <h3>Страница работы</h3>
+        <p>Каждая страница, на которой рассказывается о той или иной работе, подчинена единой структуре с&nbsp;некоторыми от нее отклонениями. Я&nbsp;рассказываю о задачах и&nbsp;проблеме проекта, времени выполнения, инструментах и поиске идей. Далее рассматриваютсяя те смысловые части, которые отличают именно приведенную работу: например, фирменный стиль организации или особенности дизайна сайта.</p>
+        <div class="full-size" id="first-photo"><img src="../images/m4a-work-page1.png"></div>
+        <div class="full-size" id="second-photo"><img src="../images/m4a-work-page2.png"></div>
+        <h5>Внизу страницы гостям портфолио предлагается посмотреть другие мои работы</h5>
+      </section>
+      <h2>Портфолио не берет на себя задачу максимально подробно рассмотреть каждый проект, но представляет самые яркие черты моих работ.</h2>
+    </article>
+    <section class="haveyouseenit wow slideInUp">
+      <h4>Уже видели это?</h4>
+      <div class="haveyouseenit-photos">
+        <a href="../m1a/index.html">
+          <div class="preview">
+            <img src="../images/diary-week.png">
+            <h5>Личный дневник.</h5>
+          </div>
+        </a>
+        <a href="../m3k/index.html">
+          <div class="preview">
+            <img src="../images/book-mockup.jpg">
+            <h5>Книга о пространстве.</h5>
+          </div>
+        </a>
+        <a href="../m4k/index.html">
+          <div class="preview">
+            <img src="../images/webposter1-macbook.jpg">
+            <h5>Веб-постер.</h5>
+          </div>
+        </a>
+      </div>
     </section>
+    <footer>
+      <div class="footer-about">
+        <p>Проект студентки первого курса<br> профиля <a href="https://design.hse.ru/dir/programming">«Дизайн и программирование»</a></p>
+        <h3>Школа дизайна НИУ ВШЭ</h3>
+        <h4>Тоня Ветлугаева © 2019</h4>
+      </div>
+      <div class="share">
+        <p id="share">Поделиться:</p>
+      <div class="share-buttons-container">
+        <div class="share-list">
+          <a class="fb-h" onclick="return fbs_click()" target="_blank">
+            <img src="https://img.icons8.com/material-rounded/96/000000/facebook-f.png">
+          </a>
+          <a class="tw-h" onclick="return tbs_click()"  target="_blank">
+            <img src="https://img.icons8.com/material-rounded/96/000000/twitter-squared.png">
+          </a>
+          <a class="li-h" onclick="return lbs_click()"  target="_blank">
+            <img src="https://img.icons8.com/material-rounded/96/000000/linkedin.png">
+          </a>
+          <a class="re-h" onclick="return rbs_click()" target="_blank">
+            <img src="https://img.icons8.com/ios-glyphs/90/000000/reddit.png">
+          </a>
+          <a data-pin-do="buttonPin" data-pin-config="none" class="pi-h" onclick="return pbs_click()" target="_blank">
+            <img src="https://img.icons8.com/ios-glyphs/90/000000/pinterest.png">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/share.js" charset="utf-8"></script>
+    <script src="../js/header.js" charset="utf-8"></script>
+    <script src="../js/burger.js" charset="utf-8"></script>
+    <script src="../js/scroll.js" charset="utf-8"></script>
+    <script src="../js/woow.js" charset="utf-8"></script>
   </body>
 </html>

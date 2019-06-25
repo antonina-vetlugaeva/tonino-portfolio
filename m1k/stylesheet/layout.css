@@ -208,15 +208,12 @@ h2 {
   background-size: cover;
 }
 
-.moodboard {
+.moodboard img {
   width: 86.5%;
-  height: 38.5em;
+  height: auto;
   margin-top: 5.5em;
   margin-right: 9.3em;
   margin-bottom: 0;
-
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .research p, .firmstyle p {
@@ -246,7 +243,7 @@ h5:last-of-type {
   flex-wrap: wrap;
 }
 
-.small-image {
+.small-image img {
   width: 29em;
   height: 19em;
 
@@ -587,6 +584,10 @@ a.pi-h {
     background-size: cover;
   }
 
+  .moodboard {
+    margin-top: 2.2em;
+  }
+
   h5 {
     width: 25em;
     padding-top: 0.7em;
@@ -599,12 +600,9 @@ a.pi-h {
     display: inline-block;
   }
 
-  .small-image {
+  .small-image img {
     width: 100%;
     height: 40em;
-
-    background-position: center;
-    background-size: cover;
   }
 
   .part-of-research:first-of-type {
